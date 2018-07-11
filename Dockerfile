@@ -58,7 +58,7 @@ RUN pip3.6 install virtualenv
 RUN useradd -ms /bin/bash -d /data -u 1000 user && mkdir -p /data && chown 1000:1000 /data
 
 RUN pip2.7 install -U 'ipython[notebook]<6' Cython
-RUN pip3.6 install -U 'ipython[notebook]' Cython
+RUN pip3.6 install -U 'tornado==4.5.3' 'ipython[notebook]' Cython
 
 # Installing Gophernotes
 RUN mkdir -p /var/lib/gohome/{bin,pkg,src} && \
