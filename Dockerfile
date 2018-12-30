@@ -20,6 +20,7 @@ RUN yum install -y \
              freetype-devel \
              gmp-devel \
              lcms2-devel \
+             libaio-devel \
              libattr-devel \
              libcurl-devel \
              libjpeg-turbo-devel \
